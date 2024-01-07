@@ -172,6 +172,7 @@ function generateBarChart(players, totalBalancePerPerson) {
     datasets.push(totalBalancePerPersonLine);
 
     var options = {
+        indexAxis: 'y',
         scales: {
             x: {
                 stacked: false,
