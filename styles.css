@@ -1,0 +1,121 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* ページの背景色 */
+    margin: 20px;
+    padding: 15px;
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #4CAF50; /* ヘッダーの背景色（緑色のカラーテーマ） */
+    color: white; /* ヘッダーの文字色 */
+    text-align: center; /* ヘッダーの中央揃え */
+    padding: 15px; /* ヘッダーのパディング */
+    font-size: 24px; /* ヘッダーのフォントサイズ */
+}
+
+/* 入力フォームのスタイル */
+input[type="text"],
+input[type="date"] {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 150px;
+}
+
+.numeric-input {
+    text-align: right;
+}
+
+/* セレクトボックスのスタイル */
+select {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 150px;
+}
+
+/* ボタンのスタイル */
+button {
+    background-color: #4CAF50; /* 緑色のカラーテーマ */
+    color: white;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ボタンが押されたときのスタイル */
+button:hover {
+    background-color: #45a049; /* ホバー時の色 */
+}
+
+/* フォームのスタイル */
+#dateForm {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff; /* フォームの背景色 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#player-form {
+    display: inline-block;
+    border: 1px solid #00000080; 
+    margin: 5px;
+    padding: 10px;
+    /* float: left; */
+}
+
+/* ラベルのスタイル */
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #333;
+    width: 120px;
+    white-space: nowrap;
+}
+
+#output-area label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #333;
+    width: 300px; 
+    white-space: nowrap; 
+}
+
+/* タイトルのスタイル */
+h2 {
+    color: #4CAF50; /* 緑色のカラーテーマ */
+}
+
+/* フラットデザイン用のボーダーレスボタン */
+button.flat-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+/* フラットデザイン用のアクセントカラー */
+.accent-color {
+    color: #4CAF50; /* 緑色のカラーテーマ */
+}
+
+/* フラットデザイン用のカードスタイル */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}

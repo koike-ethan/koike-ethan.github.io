@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ノリ打ち計算機</title>
+</head>
+<body>
+    <header>ノリ打ち計算機</header>
+
+    <!-- 実践情報入力領域 -->
+    <div id="practiceInfo-area">
+        <h2>実践情報</h2>
+        <!-- 実践日入力フォーム -->
+        <label for="practiceDate">実践日:</label>
+        <input type="date" id="practiceDate"><br>
+        <!-- ホール名入力フォーム -->
+        <label for="hallName">ホール名:</label>
+        <input type="text" id="hallName">
+        <!-- 交換率選択フォーム -->
+        <label for="exchangeRate">交換率(/100yen):</label>
+        <select id="exchangeRate">
+            <!-- JavaScriptで生成するオプションを追加 -->
+        </select><br>
+        <!-- ノリ打ち人数選択フォーム -->
+        <label for="numberOfPlayers">ノリ打ち人数:</label>
+        <select id="numberOfPlayers">
+            <option value="2">2人</option>
+            <option value="3">3人</option>
+            <option value="4">4人</option>
+            <option value="5">5人</option>
+        </select>
+    </div>
+
+    <!-- プレイヤー情報入力領域 -->
+    <div id="input-area">
+        <h2>プレイヤー情報</h2>
+        <!-- プレイヤー情報の入力フォーム -->
+        <!-- ここにJavaScriptで生成するコードを追加 -->
+        <div id="player-forms"></div>
+
+        <!-- 計算ボタン -->
+        <button onclick="calculate()">計算</button>
+    </div>
+
+    <!-- ノリ打ち結果出力領域 -->
+    <div id="output-area">
+        <h2>ノリ打ち結果</h2>
+        <!-- プレイヤーごとの結果表示 -->
+        <!-- ここにJavaScriptで生成するコードを追加 -->
+        <div id="player-results"></div>
+        <!-- 合計収支表示 -->
+        <div id="all-results">
+            <label for="totalBalance">合計収支(円):</label>
+            <input type="text" id="totalBalance" class="numeric-input" readonly><br>
+            <label for="totalBalancePerPerson">１人あたり収支(円):</label>
+            <input type="text" id="totalBalancePerPerson" class="numeric-input" readonly>
+        </div>
+
+        <!-- グラフ描画領域 -->
+        <h2>グラフ</h2>
+        <canvas id="resultsChart" width="200" height="100"></canvas>
+
+        <!-- 受渡金額出力領域 -->
+        <h2>受渡金額</h2>
+        <!-- プレイヤーごとの受渡金額表示 -->
+        <!-- ここにJavaScriptで生成するコードを追加 -->
+        <div id="transfer-amounts"></div>
+
+        <!-- 画像化ボタン -->
+        <button onclick="capturePage()">このページを画像化する</button>
+    </div>
+
+    <!-- 使用する外部ライブラリのスクリプト読み込み -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <!-- 本アプリのスクリプト読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>
